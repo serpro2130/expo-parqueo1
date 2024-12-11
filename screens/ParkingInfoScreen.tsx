@@ -1,19 +1,26 @@
 import React from 'react';
-import { View, Text, Button, StyleSheet } from 'react-native';
+import { View, Image, StyleSheet } from 'react-native';
 
-export default function ParkingInfoScreen({ navigation }: { navigation: any }) {
-    return (
-        <View style={styles.container}>
-            <Text style={styles.title}>Información de Parqueaderos</Text>
-            <Text>Parqueadero A: Capacidad 50 vehículos</Text>
-            <Text>Parqueadero B: Capacidad 100 vehículos</Text>
-            <Text>Parqueadero C: Capacidad 50 vehículos</Text>
-            <Button title="Regresar" onPress={() => navigation.goBack()} />
-        </View>
-    );
+export default function ParkingInfoScreen() {
+  return (
+    <View style={styles.container}>
+      <Image
+        source={require('../assets/parking.png')} // Asegúrate de que la imagen esté en la carpeta assets
+        style={styles.image}
+        resizeMode="cover" // Ajusta la imagen para que ocupe toda la pantalla
+      />
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
-    container: { flex: 1, justifyContent: 'center', alignItems: 'center', padding: 16 },
-    title: { fontSize: 24, fontWeight: 'bold', marginBottom: 20 },
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  image: {
+    width: '100%', // Ancho completo de la pantalla
+    height: '100%', // Altura completa de la pantalla
+  },
 });

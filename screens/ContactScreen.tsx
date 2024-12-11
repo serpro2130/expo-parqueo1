@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Button, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 
 export default function ContactScreen({ navigation }: { navigation: any }) {
     return (
@@ -8,7 +8,7 @@ export default function ContactScreen({ navigation }: { navigation: any }) {
             <Text>Dirección: ESPE-Innovativa E.P.</Text>
             <Text>Teléfono: 0999027652</Text>
             <Text>Email: farellano@espe-innovativa.edu.ec</Text>
-            <Button title="Regresar" onPress={() => navigation.goBack()} />
+
         </View>
     );
 }
