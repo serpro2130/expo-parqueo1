@@ -1,7 +1,9 @@
 {
   "expo": {
-    "name": "counter-app",
-    "slug": "counter-app",
+    "name": "Parqueaderos-ESPE",
+    "slug": "Parqueaderos-ESPE",
+    "description": "Una aplicación para gestionar parqueaderos",
+    "owner": "amplgdg",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -19,10 +21,22 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.amplgdg.ParqueaderosESPE"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d6ad507b-f61c-470d-b887-aec369e48e81"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/d6ad507b-f61c-470d-b887-aec369e48e81"
     }
   }
 }
